@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "nombreCategoria": "Producto 1",
+        "fotoCategoria": "/images/categorias/cosmetica-natural.jpg"
+    },
+    {
+        "id": "2",
+        "nombreCategoria": "Producto 2",
+        "fotoCategoria": "/images/categorias/tejidos.jpg"
+    },
+    {
+        "id": "3",
+        "nombreCategoria": "Producto 3",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "4",
+        "nombreCategoria": "Producto 4",
+        "fotoCategoria": "/images/categorias/artesania.jpg"
+    },
+    {
+        "id": "5",
+        "nombreCategoria": "Producto 5",
+        "fotoCategoria": "/images/categorias/salud.webp"
+    },
+    {
+        "id": "6",
+        "nombreCategoria": "Producto 6",
+        "fotoCategoria": "/images/categorias/arte-y-pintura.jpg"
+    },
+    {
+        "id": "7",
+        "nombreCategoria": "Producto 7",
+        "fotoCategoria": "/images/categorias/gourmet.webp"
+    },
+    {
+        "id": "8",
+        "nombreCategoria": "Producto 8",
+        "fotoCategoria": "/images/categorias/serigrafia.png"
+    }
+]

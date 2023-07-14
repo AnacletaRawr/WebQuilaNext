@@ -1,0 +1,6 @@
+.title {
+    color: var(--darkGreen);
+    margin: 1.5rem auto;
+    max-width: 1240px;
+    font-weight: 500;
+}

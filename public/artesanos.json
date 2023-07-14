@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "nombreCategoria": "Artesano 1",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "2",
+        "nombreCategoria": "Artesano 2",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "3",
+        "nombreCategoria": "Artesano 3",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "4",
+        "nombreCategoria": "Artesano 4",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "5",
+        "nombreCategoria": "Artesano 5",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "6",
+        "nombreCategoria": "Artesano 6",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "7",
+        "nombreCategoria": "Artesano 7",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "8",
+        "nombreCategoria": "Artesano 8",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    },
+    {
+        "id": "9",
+        "nombreCategoria": "Artesano 9",
+        "fotoCategoria": "/images/categorias/diseno-textil.png"
+    }
+]
