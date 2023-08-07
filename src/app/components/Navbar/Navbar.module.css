@@ -58,6 +58,7 @@
     /*Formato del texto de enlace*/
     text-decoration: none;
     font-size: 16px;
+    color: var(--pureBlack);
 }
 
 

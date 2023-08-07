@@ -1,0 +1,21 @@
+.main_title,
+.bg_tree {
+    background: var(--darkCoffee) url(../../../../public/images/otros/arbolesquila.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.main_title h2 {
+    font-family: 'Newsreader';
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.4rem;
+    border: 2px solid;
+    margin: 0px 20%;
+    padding: 5px 0;
+    backdrop-filter: blur(10px);
+}
+

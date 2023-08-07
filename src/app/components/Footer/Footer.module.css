@@ -1,7 +1,8 @@
-.footer {
-    background-color: burlywood;
-    color: black;
-    font-weight: 400;
-    padding: 10px;
-    font-size: 30px;
+.footer,
+.img_footer {
+    background: var(--darkCoffee) url(../../../../public/images/otros/arbolesquila.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
 }

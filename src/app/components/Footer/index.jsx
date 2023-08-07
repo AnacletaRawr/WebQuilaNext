@@ -1,5 +1,11 @@
-import styles from './Footer.module.css'
+import style from './Footer.module.css'
 
-export default function Header() {
-    return <footer className={styles.footer}>Este es el footer de Quila</footer>
+export default function Footer() {
+    return (
+        <>  
+            <footer className={style.footer}>
+                <div className={style.img_footer}></div>  
+            </footer>
+        </>
+    )
 }

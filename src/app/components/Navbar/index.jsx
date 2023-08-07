@@ -12,7 +12,7 @@ export default function Navbar() {
             </div>
             <div className={styles.nav2}>
                 <ul>
-                    <li><Link href="/">Nosotros</Link></li>
+                    <li><Link href="/about">Nosotros</Link></li>
                     <li><Link href="/">Actividades</Link></li>
                     <li><Link href="/artesanos">Artesanas y Artesanos</Link></li>
                     <li><Link href="/">Contacto</Link></li>
