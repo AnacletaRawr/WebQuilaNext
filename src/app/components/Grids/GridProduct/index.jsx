@@ -26,7 +26,8 @@ export async function GridProduct() {
                         width={300}>
                     </Image>
                 </div>
-                <Link href={`/catalogo/productos/${id}`} className={styles.nombre_producto}><h3>{nombreCategoria} </h3> </Link>
+                <Link href={`/catalogo/productos/${id}`}
+                    className={styles.nombre_producto}><h3>{nombreCategoria} </h3> </Link>
                 <p className={styles.nombre_emprendedor}>{nombreCategoria}</p>
             </div>
         ))}
