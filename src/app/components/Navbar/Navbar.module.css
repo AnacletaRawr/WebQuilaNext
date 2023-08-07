@@ -11,6 +11,11 @@
 .container_logo {
     display: flex;
 }
+
+.container_logo>* {
+    margin: 0;
+}
+
 .logo {
     width: 105px;
     height: auto;
@@ -34,6 +39,7 @@
     list-style-type: none;
     gap: 1rem;
 }
+
 
 /* Navbar links - elementos */
 .nav2 li {

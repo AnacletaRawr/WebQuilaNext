@@ -1,0 +1,115 @@
+.product_container {
+    max-width: 1240px;
+    min-height: 50vh;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--lightGray);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(300px, 48%), 1fr));
+    gap: 2rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+.photo_container {
+    position: relative;
+    overflow: hidden;
+    max-height: min(50vh, 500px);
+    object-position: center;
+}
+
+.first_photo {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.text_container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_container>p {
+    text-align: justify;
+}
+
+.title {}
+
+
+
+.action_btn {
+    text-decoration: none;
+    background-color: var(--quilaColor);
+    color: var(--white);
+    padding: .7rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.action_btn:hover {
+    background-color: var(--darkGreen);
+    color: var(--pureBlack);
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.carousel {
+    border-top: solid var(--lightGray) 1px;
+    border-bottom: solid var(--lightGray) 1px;
+    height: 30vh;
+    margin: 3rem 0;
+}
+
+.margin {
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.margin p {
+    text-transform: uppercase;
+    color: var(--quilaColor);
+
+}
+
+.carousel_container {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.carousel_container>div {
+    background-color: var(--lightGray);
+    height: 80%;
+    width: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mini_photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease;
+}
+
+.mini_photo:hover {
+    border: 1px solid var(--quilaColor);
+    transform: scale(1.2);
+    cursor: pointer;
+}

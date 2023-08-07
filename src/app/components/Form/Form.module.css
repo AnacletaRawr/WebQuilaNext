@@ -1,0 +1,46 @@
+.formContainer {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contactForm {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.title h2 {
+    color: var(--quilaColor);
+    font-weight: 600;
+}
+
+.contactForm label {
+    color: var(--pureBlack);
+}
+
+.contactForm input[type=text],
+.contactForm input[type=email],
+.contactForm textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px var(--pureBlack) solid;
+    resize: none;
+}
+
+.btn {
+    background-color: var(--quilaColor);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem;
+    border: none;
+    border-radius: 3rem;
+    align-self: center;
+}

@@ -1,4 +1,29 @@
 .margin {
-    margin: 0 100px;
+    margin: 0 auto;
     max-width: 1240px;
 }
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.carousel_container {
+    width: 100%;
+    height: 45vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_img {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.action_btn {}

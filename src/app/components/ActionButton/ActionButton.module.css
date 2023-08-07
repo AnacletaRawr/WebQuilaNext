@@ -1,0 +1,7 @@
+.btn {
+    text-decoration: none;
+    background-color: var(--quilaColor);
+    color: var(--white);
+    padding: .7rem 1rem;
+    border-radius: 2rem;
+}
