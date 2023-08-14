@@ -12,7 +12,7 @@ import imgCar1 from "./../../public/images/Fotos generales/fondo-hojas-y-frase.j
 import imgCar2 from "./../../public/images/Fotos generales/camino-Hortensias-Cunco.jpg";
 import imgCar3 from "./../../public/images/Fotos generales/tienda-interior-4.jpg";
 
-
+//Nuevo Carrusel
 
 export default function Home() {
   return (
