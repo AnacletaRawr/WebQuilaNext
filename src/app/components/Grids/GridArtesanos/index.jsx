@@ -2,33 +2,31 @@ import Image from "next/image";
 import styles from './../GridProduct.module.css'
 import Link from "next/link";
 
-{/* FETCH en el servidor */ }
-const getStaticProps = () => {
-    return fetch('http://localhost:3000/artesanos.json')
-        .then(res => res.json())
-}
 
-export async function GridArtesanos() {
-    const photos = await getStaticProps();
+export default function GridArtesanos({ entrepreneurs }) {
 
-    return (<div className={styles.grid_productos}>
-        {photos.map(({ id, nombreCategoria, fotoCategoria }) => (
+    if (!entrepreneurs) {
+        return <p>Cargando...</p>; // En caso que entrepreneurs sea undefined
+    }
 
-            <div key={id} className={styles.container}>
-                <div key={id} className={styles.tarjeta_productos}>
-                    <Image
-                        alt="Imagen de artesano"
-                        className={styles.imagen_producto}
-                        src={fotoCategoria}
-                        height={300}
-                        width={300}>
-                    </Image>
+    return (
+        <div className={styles.grid_productos}>
+            {entrepreneurs.map((entrepreneur) => (
+                <div key={entrepreneur.entrepreneurId} className={styles.container}>
+                    <div key={entrepreneur.entrepreneurId} className={styles.tarjeta_productos}>
+                        <Image
+                            alt={entrepreneur.nameEntrepreneur}
+                            className={styles.imagen_producto}
+                            src={`http://localhost:8080${entrepreneur.urlImageEntrepreneur}`}
+                            height={300}
+                            width={300}
+                        />
+                    </div>
+                    <Link href={`/emprendedor/${entrepreneur.entrepreneurId}`} className={styles.nombre_producto}><h3>{entrepreneur.nameEntrepreneurship} </h3> </Link>
+                    <p className={styles.nombre_emprendedor}>{entrepreneur.nameEntrepreneur}</p>
                 </div>
-                <Link href="/" className={styles.nombre_producto}><h3>{nombreCategoria} </h3> </Link>
-                <p className={styles.nombre_emprendedor}>{nombreCategoria}</p>
-            </div>
-        ))}
-    </div>
+            ))}
+        </div>
     )
-
 }
+

@@ -5,11 +5,11 @@ import style from './Form.module.css'
 
 export default function Form() {
     const [contactForm, setContactForm] = useState({
-        nombreContacto: "",
-        emailContacto: "",
-        telefonoContacto: "",
-        asuntoMensaje: "",
-        contenidoMensaje: "",
+        name: "",
+        email: "",
+        telephone: "",
+        subject: "",
+        message: "",
     })
         ;
     const handleChange = (e) => {
@@ -40,9 +40,9 @@ export default function Form() {
                 <input
                     id='name'
                     type="text"
-                    name="nombreContacto"
+                    name="name"
                     autoComplete='name'
-                    value={contactForm.nombreContacto}
+                    value={contactForm.name}
                     required
                     onChange={(e) => handleChange(e)} />
                 <br />
@@ -50,8 +50,8 @@ export default function Form() {
                 <input
                     id='email'
                     type="email"
-                    name="emailContacto"
-                    value={contactForm.emailContacto}
+                    name="email"
+                    value={contactForm.email}
                     autoComplete='email'
                     required
                     onChange={(e) => handleChange(e)} />
@@ -60,29 +60,29 @@ export default function Form() {
                 <input
                     id='phone'
                     type="text"
-                    name="telefonoContacto"
+                    name="telephone"
                     autoComplete='tel'
                     required
-                    value={contactForm.telefonoContacto}
+                    value={contactForm.telephone}
                     onChange={(e) => handleChange(e)} />
                 <br />
                 <label htmlFor='subject'>Asunto:</label>
                 <input
                     id='subject'
                     type="text"
-                    name="asuntoMensaje"
+                    name="subject"
                     autoComplete='off'
-                    value={contactForm.asuntoMensaje}
+                    value={contactForm.subject}
                     required
                     onChange={(e) => handleChange(e)} />
                 <br />
                 <label htmlFor='message'>Mensaje:</label>
                 <textarea
                     id='message'
-                    name="contenidoMensaje"
+                    name="message"
                     rows={4}
                     cols={50}
-                    value={contactForm.contenidoMensaje}
+                    value={contactForm.message}
                     required
                     onChange={(e) => handleChange(e)} />
                 <br />
