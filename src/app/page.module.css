@@ -18,12 +18,238 @@
     overflow: hidden;
 }
 
-.carousel_img {
+.carousel_img2{
     position: relative;
     object-fit: cover;
     object-position: center;
+    width: 90%;
+    height: 90%;
+    
+}
+.carousel_container2 {
+    margin-left: 11%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+.map {
+    min-height: 80vh;
     width: 100%;
-    height: 100%;
+    height: 800px;
+    margin-bottom: 0px;
 }
 
 /* .action_btn {} */
+
+/* --- --- --- DRONE --- --- --- */
+#drone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 10vh;
+    margin-top: 150px;
+}
+#drone .colab {
+    position: relative;
+    width: 1240px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#drone .colab .box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+}
+#drone .colab .box .img_bxc {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+#drone .colab .box .img_bxc{
+    border-radius: 15px 15px 0px 0px;
+}
+#drone .colab .box .img_bxc .img_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    left: 0;
+    object-fit: cover;
+}
+/* --- --- --- FIN DRONE --- --- --- */
+/* --- --- --- QUIÉNES SOMOS --- --- --- */
+#somos {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+#somos .container {
+    margin-top: -180px;
+    width: 1180px;
+    padding: 30px;
+    background: var(--darkCoffee);
+}
+
+#somos .container .card {
+    height: 220px;
+    background: var(--white);
+    border-radius: 5px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+#somos .container .card:hover {
+    height: 600px;
+}
+
+#somos .container .card .imgBx {
+    position: relative;
+    top: -60px;
+    left: 0px;
+    z-index: 1;
+}
+
+#somos .container .card .imgBx img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+#somos .card .orden_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    color: var(--pureBlack);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#somos .content:first-child {
+    text-align: right;
+}
+#somos .content:first-child p{
+    padding: 12px 0;
+}
+
+#somos .content:nth-child(2) {
+    margin-top: 5px;
+    padding-right: 30px;
+    text-align: right;
+}
+#somos .content:nth-child(2) p{
+    padding: 12px 0;
+}
+
+#somos .content:nth-child(3) {
+    text-align: left;
+}
+#somos .content:nth-child(3) h3{
+    margin-top: -7px;
+    padding: 11px 0;
+}
+
+#somos .card:hover .orden_content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.3s;
+}
+.crsl2 {
+    height: 350px;
+    width: calc(100% / 4);
+    margin-left: 10px;
+    margin-bottom: 300px;
+}
+.title_pb2 {
+    text-align: center;
+   
+    background-color: transparent; 
+    border-radius: 0;  
+    font-size: 1.1rem;
+    font-family: 'Newsreader';
+    font-weight: 500;
+    color: var(--darkCoffee); 
+    padding: 15px 20px;
+    margin-top: 90px;
+}
+.title_pb2{
+    background-color: var(--darkGreen); 
+    color: var(--white);
+
+    transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    #somos .card .orden_content {
+        grid-template-columns: 1fr;
+    }
+    #somos .content:first-child,
+    #somos .content:nth-child(2), 
+    #somos .content:nth-child(3){
+        text-align: center;
+    }
+    #somos .content:first-child {
+        margin-top: -30px;
+    }
+    #somos .container .card:hover {
+        height: 850px;
+    }
+    #somos .container .card {
+    height: 50px;
+    background: var(--white);
+    border-radius: 5px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    transition: 0.3s ease-in-out;
+    }
+  }
+  @media (max-width: 460px) {
+   
+    #somos .container .card:hover {
+        height: 850px;
+    }
+    
+    #somos .container {
+    margin-top: -180px;
+    width: 1180px;
+    padding: 30px;
+    background: var(--darkCoffee);
+    }
+
+    #somos .container .card {
+        height: 50px;
+        background: var(--white);
+        border-radius: 5px;
+        margin: 30px -30px;
+        transition: 0.3s ease-in-out;
+        }
+   
+  }
+  @media (max-width: 370px) {
+    
+    #somos .container .card:hover {
+        height: 900px;
+    }
+  }
+  @media (max-width: 350px) {
+    
+    #somos .container .card:hover {
+        height: 1100px;
+    }
+  }
+  @media (max-width: 300px) {
+    
+    #somos .container .card:hover {
+        height: 1250px;
+    }
+  }
+/* --- --- --- FIN QUIÉNES SOMOS --- --- --- */

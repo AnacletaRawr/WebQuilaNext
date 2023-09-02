@@ -1,7 +1,7 @@
 import Link from "next/link"
 import style from "./page.module.css"
 import Image from "next/image"
-import bgImage from "../../../public/images/Fotos generales/tienda interior 4.jpg"
+import bgImage from "../../../public/images/Fotos generales/tienda-interior-4.jpg"
 import Form from "../components/Form"
 
 export default function ContactPage() {

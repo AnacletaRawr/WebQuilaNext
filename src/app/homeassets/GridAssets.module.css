@@ -1,0 +1,811 @@
+/* --- --- --- CARDS GRID 1/1 --- --- --- */
+
+
+.grid_productos {
+    margin: 1.5rem auto;
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(30%, 250px), 1fr));
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--lightGray);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta_productos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid var(--lightGray);
+    background-color: #a38f8599;
+}
+
+.imagen {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.tarjeta_productos:hover .imagen {
+    transform: scale(1.25);
+}
+
+.imagen_producto {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    transition: transform .3s;
+}
+
+.link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 70%;
+    border: #ffffff 1px solid;
+    border-radius: 10px;
+    background-color: #33333399;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 100%;
+    cursor: pointer;
+    transition: .25s ease-out;
+}
+
+.tarjeta_productos:hover .link {
+    border: none;
+    height: 100%;
+    width: 100%;
+
+}
+
+.nombre_producto {
+    text-decoration: none;
+}
+
+.nombre_producto,
+.nombre_emprendedor {
+    height: 45px;
+    text-align: center;
+    
+}
+
+.container:hover {
+    border: 1px solid var(--quilaColor);
+}
+
+.container:hover .imagen_producto,
+.imagen {
+    transform: scale(1.25);
+}
+
+.container:hover .nombre_producto {
+    color: var(--quilaColor);
+}
+/* --- --- --- NAVIGATION BAR --- --- --- */
+#navigation {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    
+}
+#navigation .navigation_bar{
+    position: relative;
+    width: 65px;
+    height: 240px;
+    background: var(--white);
+    border-radius: 35px 0px 0px 35px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+.navigation_bar ul {
+    position: absolute;
+    top: 0;
+    right: 0px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.navigation_bar ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation_bar ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: var(--pureBlack);
+}
+.navigation_bar ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 110px;
+    text-align: center;
+    transition: 0.5s;
+}
+.navigation_bar ul li.active a .icon {
+    color: var(--white);
+}
+.navigation_bar ul li a .title {
+    position: absolute;
+    top: 40%;
+    right: 40px;
+    background: var(--white);
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+.navigation_bar ul li:hover a .title {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-50%);
+}
+.navigation_bar ul li:hover a .title:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--white);
+    right:  -1px;
+    top: 45%;
+    transform: rotate(45deg) translateY(-50%);
+    border-radius: 2px;
+}
+.navigation_bar ul .indicator {
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+/* --- --- --- FIN NAVIGATION BAR --- --- --- */
+/* Card Uno */
+/* COLABORADORES  */
+#nuestros_colaboradores .title_pb {
+    cursor: pointer;
+    background-color: transparent; 
+    border-radius: 0;  
+    font-size: 1.8rem;
+    font-family: 'Newsreader';
+    font-weight: 500;
+    color: var(--white); 
+    padding: 15px 80px;
+    margin-top: 20px;
+}
+#nuestros_colaboradores .title_pb:hover{
+    background-color: var(--darkGreen); 
+    color: var(--white);
+    transform: translateY(-20px);
+    transition: 0.3s;
+}
+
+#nuestros_colaboradores .nombre_producto h3{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--white);
+    border:1px solid var(--white);
+    z-index: 10;
+}
+#nuestros_colaboradores .nombre_producto h3:hover {
+    padding: 15px 20px;
+    background-color: var(--darkCoffee);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5rem);
+    color: var(--white);
+    transition: .2s ease-out;
+}
+#nuestros_colaboradores {
+    position: relative;
+    left: 8%;
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    background: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url(../../../public/images/Fotos\ generales/tiendainterior1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 80vh;
+    background-position: center;  
+    margin: 30px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+#nuestros_colaboradores .container_uno {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#nuestros_colaboradores .container_uno .c_card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    margin: 00% 20px 30px;
+    transition: 0.5s;
+}
+#nuestros_colaboradores .container_uno .c_card .c_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  /*   background:var(--white); */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+#nuestros_colaboradores .esfera {
+    position: relative;
+    margin-top: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    inset: 0;
+   /*  background-image: url(media/Juanitauno.png); */
+    background-size: contain;
+}
+.container_cardUno {
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid var(--lightGray); */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta_productosCardUno {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+   /*  border-bottom: 1px solid var(--lightGray); */
+    /* background-color: #a38f8599; */
+}
+#nuestros_colaboradores .container_uno .c_card .c_box h3 {
+   margin-top: 15%;
+   color: var(--white);
+   font-size: 1.3rem;
+   font-weight: 400;
+   letter-spacing: 3px;
+}
+/* --- --- --- FIN NUESTROS COLABORADORES --- --- --- */
+/* Card Dos */
+/* --- --- --- PRODUCTOS --- --- --- */
+
+.grid_productos_dos {
+    margin: 1.5rem auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(30%, 300px), 1fr));
+}
+
+#nuestros_productos {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 500px;
+    border-radius: 15px;
+    background-color: var(--darkCoffee);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    text-align: center;
+    background-position: center;  
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#nuestros_productos .container_dos {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#nuestros_productos .container_dos .c_card_dos {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0 20px 40px;
+}
+#nuestros_productos .container_dos .c_card_dos .c_box_dos {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  /*   background:var(--white); */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.container_cardDos {
+    margin-top: 30px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid var(--lightGray); */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta_productosCardDos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px ;
+   /*  border-bottom: 1px solid var(--lightGray); */
+    /* background-color: #a38f8599; */
+}
+
+#nuestros_productos .title_pb {
+    cursor: pointer;
+    background-color: transparent; 
+    border-radius: 0;  
+    font-size: 1.8rem;
+    font-family: 'Newsreader';
+    font-weight: 500;
+    color: var(--white); 
+    padding: 15px 80px;
+    margin-top: 70px;
+}
+#nuestros_productos .title_pb:hover{
+    background-color: var(--darkGreen); 
+    transform: translateY(-20px);
+    transition: 0.3s;
+}
+
+#nuestros_productos .prod_btn {
+    position: absolute;
+    text-align: center;
+    transform: translate(10%, 350%);
+    text-align: center;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    font-size: 1.2rem;
+    z-index: 10;
+    cursor: pointer;
+    padding: 15px 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5rem);
+    color: var(--white);
+    background-color: transparent;
+  
+}
+#nuestros_productos .prod_btn:hover {
+    background-color: var(--darkCoffee);
+    color: var(--white);
+    transition: .25s ease-out;
+}
+
+/* --- --- --- FIN PRODUCTOS --- --- --- */
+/* Card Tres */
+.grid_productos_tres {
+    margin: 1.5rem auto;
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(30%, 300px), 1fr));
+}
+
+#actividades {
+    position: relative;
+    max-width: 100%;
+    border-radius: 15px;
+    /* background-color: var(--darkCoffee); */
+    text-align: center;
+    background-position: center;  
+    background-image: url(./../../../public/images/otros/Backgroundact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    margin-bottom: 170px;
+}
+
+#actividades .container_tres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#actividades .container_tres .c_card_tres {
+    position: relative;
+    max-width: 300px;
+    height: 200px;
+    background: var(--lightCoffee);
+    border-radius: 5px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+ /*    box-shadow: 0 5px 200px rgba(0,0,0,0.5); */
+    transition: 0.3s ease-in-out;
+}
+#actividades .container_tres .c_card_tres .c_box_tres {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#actividades .container_tres .c_card_tres .c_box_tres h3{
+    margin-top: 10px;
+ }
+#actividades .container_tres .c_card_tres .c_box_tres p{
+   margin-top: 10px;
+}
+.talleres{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: var(--darkGreen);
+    text-decoration: none;
+    color: var(--white);
+}
+#actividades .c_card_tres .content_a {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: var(--pureBlack);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+#actividades .c_card_tres:hover:hover .content_a {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay: 0.3s;
+}
+#actividades .container_tres .c_card_tres:hover {
+    background: var(--white);
+    height: 400px;
+}
+
+
+.container_cardTres {
+    
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid var(--lightGray); */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta_productosCardTres {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px ;
+   /*  border-bottom: 1px solid var(--lightGray); */
+    /* background-color: #a38f8599; */
+}
+
+#actividades .title_pb {
+    cursor: pointer;
+    background-color: transparent; 
+    border-radius: 0;  
+    font-size: 1.8rem;
+    font-family: 'Newsreader';
+    font-weight: 500;
+    color: var(--darkCoffee); 
+    padding: 15px 80px;
+    margin-top: 90px;
+}
+#actividades .title_pb:hover{
+    background-color: var(--darkGreen); 
+    color: var(--white);
+    transform: translateY(-20px);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/* CarruselProd */
+@media (max-width: 1240px) {
+    #nuestros_colaboradores {
+        left: 7%;
+      
+    }
+   
+    #nuestros_productos {
+        left: 0;
+        width: 100%;
+        min-height: 80vh;
+       
+    }
+    
+    
+}
+@media (max-width: 1020px) {
+    #nuestros_colaboradores {
+        left: 7%;
+        height: 1100px;
+    }
+    .container_cardUno:last-child {
+        margin-top: -60px;
+        
+    }
+}
+@media (max-width: 900px) {
+     #nuestros_colaboradores {
+        left: 6%;
+        height: 1100px;
+        margin-bottom: 0px;
+    } 
+   
+    #actividades {     
+        background-image: url(./../../../public/images/Fotos\ generales/salto truful truful melipeuco.jpg);    
+    } 
+    .container_cardTres {
+        
+        margin-top: 100px;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid var(--lightGray); */
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .container_cardTres:first-child{
+        margin-top:-70px;
+    }
+    .container_cardTres:nth-child(2){
+        margin-top:-70px;
+    }
+    .container_cardTres:nth-last-child(1){
+        margin-top:-160px;
+    }
+    
+   
+    
+
+    .container_cardUno:last-child {
+        margin-top: -60px;
+        
+    }
+    
+  
+    
+  
+
+    
+    #nuestros_productos {
+        height: 1300px;
+    
+    }
+    
+}
+@media (max-width: 720px) {
+    #nuestros_colaboradores {
+        left: 6%;
+        height: 1240px;
+        margin-bottom: -400px;
+    }
+    #nuestros_productos {
+        height: 1300px;
+    
+    }
+    #nuestros_colaboradores .title_pb {
+        padding: 15px 60px;
+    }
+}
+
+@media (max-width: 720px) {
+    #nuestros_colaboradores {
+        left: 6%;
+        height: 1740px;
+        margin-bottom: 100px;
+    }
+    #nuestros_productos {
+        height: 1300px;
+    
+    }
+    
+}
+@media (max-width: 660px) {
+    .container_cardUno:last-child {
+    margin-top: 0px;
+    
+    }
+    .container_cardTres:nth-last-child(1){
+        margin-top:-160px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #nuestros_colaboradores {
+        left: 6%;
+        height: 1740px;
+        
+        margin-bottom: 100px;
+    }
+    #nuestros_productos {
+        height: 1800px;  
+    }
+    #nuestros_colaboradores .title_pb {
+        font-size: 1.5rem;
+        margin-left: -2px;
+        padding: 15px 20px;
+    }
+    .container_cardTres:nth-last-child(1){
+        margin-top:-70px;
+    }
+    
+}
+@media (max-width: 460px) {
+    #nuestros_colaboradores {
+        left: 3%;
+        height: 1740px;
+        
+        margin-bottom: 100px;
+    }
+    #nuestros_productos {
+        height: 1800px;  
+    }
+    #nuestros_colaboradores .title_pb {
+        font-size: 1.5rem;
+        margin-left: -2px;
+        padding: 15px 20px;
+    }
+    
+}
+@media (max-width: 360px) {
+    #nuestros_colaboradores {
+        left: 2%;
+        height: 1740px;
+        
+        margin-bottom: 100px;
+    }
+    #nuestros_productos {
+        height: 1800px;  
+    }
+    #nuestros_colaboradores .title_pb {
+        font-size: 1.5rem;
+        margin-left: -2px;
+        padding: 15px 20px;
+    }
+    
+}
+@media (max-width: 320px) {
+    #nuestros_colaboradores {
+        left: 0%;
+        height: 1740px;
+        width: 100%;
+        margin: 0px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #nuestros_productos {
+        height: 1800px;  
+    }
+    #nuestros_colaboradores .title_pb {
+        font-size: 1.1rem;
+        margin-left: 0px;
+        width: 60%;
+        padding: 15px 20px;
+    }
+    #actividades .title_pb {
+        z-index: 5;
+        font-size: 1.1rem;
+        padding: 15px 20px;
+
+    }
+    #actividades .container_tres .c_card_tres .c_box_tres {
+        max-width: 240px;
+    }
+    #nuestros_productos .title_pb {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+   
+    #actividades {
+   
+    max-width: 100%;
+    left: 0%;
+   
+    /* background-color: var(--darkCoffee); */
+
+
+
+    min-height: 90vh;
+    margin-bottom: 170px;
+    }
+    .grid_productos_tres {
+    margin: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(30%, 250px), 1fr));
+    }
+    .grid_productos_dos {
+    grid-template-columns: repeat(auto-fit, minmax(max(30%, 250px), 1fr));
+    }
+    
+
+    
+    
+    
+    
+
+   
+    
+  
+  
+    
+  
+    
+   
+    
+    
+    
+    
+}

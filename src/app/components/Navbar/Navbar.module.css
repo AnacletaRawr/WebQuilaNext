@@ -125,7 +125,7 @@
     flex-direction: column;
     gap: 0;
     top: 127px;
-    right: -50%;
+    right: 0%;
     text-align: start;
     width: 50%;
     transition: 0.7s ease-in-out;
