@@ -30,6 +30,14 @@ import 'leaflet-defaulticon-compatibility';
 
 import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 
+import macrame from "./../../public/images/otros/macrame.png";
+import encuentido from "./../../public/images/otros/encurtido.png";
+import merken from "./../../public/images/otros/merken.png";
+import kombuncha from "./../../public/images/otros/kombuncha.png";
+import apicolon from "./../../public/images/otros/apicolon.png";
+import chucrut from "./../../public/images/otros/chucrut.png";
+
+
 //Nuevo Carrusel
 
 export default function Home() {
@@ -171,34 +179,55 @@ export default function Home() {
         >
         <div><Image
               className={style.carousel_img2}
-              src={imgCar1} 
+              src={macrame} 
               height={250}
               width={250}
               alt="Banner: Colaboración, sustentabilidad y compromido con el desarrollo de emprendedores de la araucanía andina">
               </Image></div>
               <div><Image
               className={style.carousel_img2}
-              src={imgCar1} 
+              src={encuentido} 
               height={250}
               width={250}
               alt="Banner: Colaboración, sustentabilidad y compromido con el desarrollo de emprendedores de la araucanía andina">
               </Image></div>
               <div><Image
               className={style.carousel_img2}
-              src={imgCar1} 
+              src={merken} 
               height={250}
               width={250}
               alt="Banner: Colaboración, sustentabilidad y compromido con el desarrollo de emprendedores de la araucanía andina">
               </Image></div>
               <div><Image
               className={style.carousel_img2}
-              src={imgCar1} 
+              src={kombuncha} 
+              height={250}
+              width={250}
+              alt="Banner: Colaboración, sustentabilidad y compromido con el desarrollo de emprendedores de la araucanía andina">
+              </Image></div>
+              <div><Image
+              className={style.carousel_img2}
+              src={apicolon} 
+              height={250}
+              width={250}
+              alt="Banner: Colaboración, sustentabilidad y compromido con el desarrollo de emprendedores de la araucanía andina">
+              </Image></div>
+              <div><Image
+              className={style.carousel_img2}
+              src={chucrut} 
               height={250}
               width={250}
               alt="Banner: Colaboración, sustentabilidad y compromido con el desarrollo de emprendedores de la araucanía andina">
               </Image></div>
         
         </CarouselDos>;
+        </div>
+        <div className={style.action_btn2}>
+        <ActionButton className={style.action_btn2}
+          href='/contact'>
+
+          Explora MÁS PRODUCTOS <span style={{ fontWeight: '600' }}>AQUÍ</span>
+        </ActionButton>
         </div>
         <CardTresHome/>
         <div className={style.title_pb2}>

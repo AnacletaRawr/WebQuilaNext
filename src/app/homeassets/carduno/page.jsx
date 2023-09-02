@@ -7,7 +7,7 @@ function CardUnoHome() {
     <section id={style.nuestros_colaboradores}>
       <button className={style.title_pb}>NUESTROS COLABORADORES</button>
     <div className={style.grid_productos}> 
-      {['arbolesquila', 'arbolesquila', 'arbolesquila'].map(path => {
+      {['artesania', 'tejidos', 'cosmetica-natural'].map(path => {
         return (
           
           <div key={path} className={style.container_cardUno}>
@@ -17,7 +17,7 @@ function CardUnoHome() {
             <div className={style.c_box}>
             <Image 
             className={style.esfera}
-            src={`/images/otros/${path}.jpg`} 
+            src={`/images/categorias/${path}.jpg`} 
             alt='pet' 
             width={300} 
             height={300} />

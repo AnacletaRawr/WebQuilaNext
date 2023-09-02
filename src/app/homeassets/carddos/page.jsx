@@ -11,7 +11,7 @@ function CardDosHome() {
     <div className={style.grid_productos_dos}> 
     
     
-      {['arbolesquila', 'arbolesquila', 'arbolesquila'].map(path => {
+      {['imagproduno','imageproddos','imageprodtres'].map(path => {
         return (
           
           <div key={path} className={style.container_cardDos}>
@@ -25,7 +25,7 @@ function CardDosHome() {
             
             <Image 
             className={style.imagen_producto}
-            src={`/images/otros/${path}.jpg`} 
+            src={`/images/otros/${path}.png`} 
             alt='pet' 
             width={450} 
             height={450} />
