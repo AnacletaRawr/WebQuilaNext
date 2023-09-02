@@ -39,6 +39,11 @@
 }
 
 /* .action_btn {} */
+.action_btn2 {
+    text-align: center;
+    margin-bottom: 100px;
+   
+} 
 
 /* --- --- --- DRONE --- --- --- */
 #drone {

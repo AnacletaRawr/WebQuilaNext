@@ -5,12 +5,12 @@ import Link from 'next/link'
 function CardTresHome() {
   return (
     <section id={style.actividades}>
-      <Link href="/">
+      <Link href="/catalogo">
       <button className={style.title_pb}>ACTIVIDADES</button>
       </Link>
       <div className={style.background_act}></div>
     <div className={style.grid_productos_tres}> 
-      {['arbolesquila', 'arbolesquila', 'arbolesquila'].map(path => {
+      {['imagenunoviti', 'imagendosviti', 'imagentresviti'].map(path => {
         return (
           
           <div key={path} className={style.container_cardTres}>
@@ -20,7 +20,7 @@ function CardTresHome() {
                 <div className={style.c_box_tres}>
             <Image 
             className={style.esfera}
-            src={`/images/otros/${path}.jpg`} 
+            src={`/images/otros/${path}.png`} 
             alt='pet' 
             width={260} 
             height={200} />
